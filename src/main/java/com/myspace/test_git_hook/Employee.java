@@ -12,6 +12,8 @@ public class Employee implements java.io.Serializable {
 
 	private java.lang.String empName;
 
+	private java.lang.String empDesig;
+
 	public Employee() {
 	}
 
@@ -31,9 +33,19 @@ public class Employee implements java.io.Serializable {
 		this.empName = empName;
 	}
 
-	public Employee(java.lang.Long empId, java.lang.String empName) {
+	public java.lang.String getEmpDesig() {
+		return this.empDesig;
+	}
+
+	public void setEmpDesig(java.lang.String empDesig) {
+		this.empDesig = empDesig;
+	}
+
+	public Employee(java.lang.Long empId, java.lang.String empName,
+			java.lang.String empDesig) {
 		this.empId = empId;
 		this.empName = empName;
+		this.empDesig = empDesig;
 	}
 
 }
