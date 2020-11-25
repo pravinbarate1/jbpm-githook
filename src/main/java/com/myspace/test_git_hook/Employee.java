@@ -10,6 +10,8 @@ public class Employee implements java.io.Serializable {
 
 	private java.lang.Long empId;
 
+	private java.lang.String empName;
+
 	public Employee() {
 	}
 
@@ -21,8 +23,17 @@ public class Employee implements java.io.Serializable {
 		this.empId = empId;
 	}
 
-	public Employee(java.lang.Long empId) {
+	public java.lang.String getEmpName() {
+		return this.empName;
+	}
+
+	public void setEmpName(java.lang.String empName) {
+		this.empName = empName;
+	}
+
+	public Employee(java.lang.Long empId, java.lang.String empName) {
 		this.empId = empId;
+		this.empName = empName;
 	}
 
 }
