@@ -6,12 +6,23 @@ package com.myspace.test_git_hook;
 
 public class Employee implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Employee() {
-    }
+	private java.lang.Long empId;
 
+	public Employee() {
+	}
 
+	public java.lang.Long getEmpId() {
+		return this.empId;
+	}
 
+	public void setEmpId(java.lang.Long empId) {
+		this.empId = empId;
+	}
+
+	public Employee(java.lang.Long empId) {
+		this.empId = empId;
+	}
 
 }
